@@ -7,3 +7,6 @@
 !/.gitignore
 !/README.md
 !/.nojekyll
+# README 预览图：目录与内容都要放行，否则会被 /* 波及
+!/screenshots/
+!/screenshots/*.jpg

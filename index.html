@@ -89,7 +89,10 @@ html[data-theme="dark"] .song:not([data-grade]) .knob::after{background:rgba(0,0
 html[data-theme="dark"] .song,
 html[data-theme="dark"] .leaderboard{
   -webkit-backdrop-filter:none;backdrop-filter:none;
-  background:linear-gradient(150deg, rgba(240,240,240,.055), rgba(196,196,196,.024));
+  /* 原为 5.5% 白叠底：在金色海面的亮部区域，卡片会几乎消失、文字压不住。
+     改为深色玻璃基底（约 50% 不透明）——亮背景上有明确边界，暗背景下比背景略暗但仍有边框与阴影分层。 */
+  background:linear-gradient(150deg, rgba(18,18,22,.54), rgba(10,10,12,.44));
+  border-color:rgba(255,255,255,.10);
 }
 
 /* 背景偏亮时（预设「纯白 / 米白」，或用户上传的亮图）：

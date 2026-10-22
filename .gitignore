@@ -1,0 +1,9 @@
+# 本目录混有多个独立项目，此仓库只发布「音乐锐评」站点本体。
+# 白名单模式：默认忽略一切，再逐个放行。以后新增发布文件需在此显式放行。
+/*
+!/index.html
+!/bg-sea-gold-1920.jpg
+!/bg-sea-gold-2560.jpg
+!/.gitignore
+!/README.md
+!/.nojekyll
